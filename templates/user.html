@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+    <h4>Hola usuario:</h4>  <!--esto son ciclos-->
+    <h4>{{name}}</h4> <!--estos elementos van a ser renderizados-->
+    <p>{{age}}</p>
+   
+
+   {%if age > 18%} <!--esta es una condicional-->
+     <p>Es mayor de edad</p>
+    {% endif %} <!--se ocupara una condicional-->
+
+    <p>Es menor de edad</p><!-- esta fuera del if y se mostrara cuando sea menor a 18-->
+
+   {%for item in list%}
+      <p>{{item}}</p>
+   {%endfor%} <!--se usa para  un ciclo-->
+
+</body>
+</html>
